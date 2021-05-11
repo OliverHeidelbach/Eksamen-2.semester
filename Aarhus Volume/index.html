@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Aarhus Volume / Forside</title>
+    <meta name="description" content="Aarhus Volume Gadefestival" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/odb7ugz.css">
+</head>
+
+<body>
+    <!--jeg starter med at lave topmenuen i headersektionen-->
+    <header class="header_forside">
+        <!--her laver jeg et nav segment for burgermenu og logo-->
+        <nav>
+            <div class="dropdown_forside">
+                <img src="img/burger_menu.png" alt=" burger menu icon" class="burger_menu">
+                <div class="dropdown-content">
+
+                    <a href="index.html">
+                        <h2>Forside</h2>
+                    </a>
+
+                    <a href="kosmetik.html">
+                        <h2>Den spiselige kosmetik</h2>
+                    </a>
+
+                    <a href="opskrift_index.html">
+                        <h2>Opskrifter</h2>
+                    </a>
+
+                    <a href="konkurrence.html">
+                        <h2>Konkurrence</h2>
+                    </a>
+
+                    <a href="om_skyr.html">
+                        <h2>Om skyr</h2>
+                    </a>
+                </div>
+            </div>
+
+            <a href="index.html">
+                <h1 id="logo_header_forside">Thise Skyr</h1>
+            </a>
+        </nav>
+
+        <!--Jeg idsætter forsideanimationen herefter-->
+        <img src="img/fors_hero.png" class="forside_hero" alt="Aarhus Volume Gadefestival forside hero-billede">
+    </header>
+    <main>
+        <!--jeg indsætter menubar i main uden et nav tag, da jeg styler menubaren på forsiden
+til position: sticky. For at få den ønskede effekt, har jeg undladt nav tagget, så
+menubaren følger toppen af vinduet  da position: sticky kun laver div'en være fixed inden for parent div-->
+        <div class="menubar_forside">
+            <div class="menubar_forside_part">
+                <a href="kosmetik.html" class="menu_button_forside">
+                    <h2>Spiselig kosmetik</h2>
+                </a>
+                <a href="opskrift_index.html" class="menu_button_forside">
+                    <h2>Opskrifter</h2>
+                </a>
+            </div>
+
+            <div class="menubar_forside_part">
+                <a href="konkurrence.html" class="menu_button_forside">
+                    <h2>Konkurrence</h2>
+                </a>
+                <a href="om_skyr.html" class="menu_button_forside">
+                    <h2>Om skyr</h2>
+                </a>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+</html>
