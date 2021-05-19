@@ -1,0 +1,391 @@
+/* Reset */
+
+html {
+margin: 0;
+padding: 0;
+    
+}
+
+/* Reset og indsættelse af font type */
+
+body {
+margin: 0;
+padding: 0;
+font-family: frank-new, sans-serif;
+font-weight: 700;
+font-style: normal;
+    
+}
+
+/* ----- LINEUP - (Underside) ----- */
+
+.lineup_festivalspil_container {
+    width: 100%;
+    height: 50px;
+    background-color: #C5392B;
+    display: flex;
+    justify-content: center;
+}
+
+.lineup_festivalspil_link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.lineup_hero_billede {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.lineup_hero_container {
+    position: relative;
+    display: flex;
+    z-index: 3;
+}
+
+.lineup_overskrift_container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #F76F1E;
+    background: linear-gradient(180deg, rgba(247,111,30,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+    z-index: 3;
+}
+
+.lineup_lineup_overskrift {
+    color: #FFFFFF;
+    font-size: 80px;
+    margin-top: -80px;
+    text-align: center;
+    
+}
+
+.lineup_hero_overskrift_h1 {
+    position: absolute;
+    font-size: 75px;
+    left: 30%;
+    top: 150px;
+    z-index: 5;
+}
+
+.lineup_hero_overskrift_h2 {
+    position: absolute;
+    font-size: 75px;
+    left: 55%;
+    top: 190px;
+    z-index: 5;
+}
+
+.lineup_button {
+  display: flex;
+  position: absolute;
+  left: 37%;
+  top: 520px;
+  z-index: 5;
+    
+}
+
+.lineup_kunstnere_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1200px;
+    padding: 50px;
+}
+
+.lineup_kunstner_kort {
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.lineup_kunstner_kort h2, a {
+    margin-left: 10px;
+    color: #C5392B;
+    text-decoration: none;
+}
+
+.lineup_kunstner_billede {
+    height: 200px;
+}
+
+
+
+
+
+ /* ---------- OM OS (Forside sektion) ---------- */
+
+ /* Dette danner den brune baggrund vha. en stor <div>, som er den brune farve. */
+
+.omos_brun_baggrund {
+width: 100%;
+height: 800px;
+background-color: #5e5047;
+    
+}
+
+ /* Billedet i sektionen bliver sat ind og stylet her */
+
+.omos_billede {
+    position: relative;
+    height: 500px;
+    width: 750px;
+    border-radius: 10px;
+    top: 45px;
+    left: 610px;
+    z-index: 3;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+ /* Den store overskrift som til dels går ind over billedet via z-index. */
+
+.omos_overskrift {
+    position: absolute;
+    margin: 0;
+    top: 55px;
+    left: 100px;
+    color: white;
+    font-size: 100px;
+    z-index: 5;
+    -webkit-text-stroke: 1px #4F433C; /* width and color */
+    
+}
+
+ /* Undertitlen som vises lige over knappen. */
+
+.omos_undertitel {
+    position: relative;
+    margin: 0;
+    top: 40px;
+    left: 100px;
+    max-width: 550px;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+   
+}
+
+.omos_button {
+  display: flex;
+  position: absolute;
+  left: 5%;
+  top: 680px;
+  z-index: 5;
+    
+}
+
+/* ---------- BLIV FRIVILLIG SEKTIONEN ---------- */
+
+/* Den hvide baggrund */
+
+.frivillig_baggrund {
+width: 100%;
+height: 800px;
+background-color: #FFFFFF;
+    
+}
+
+/* Billedet til "Bliv frivillig sektionen" */
+
+.frivillig_billede {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    top: 100px;
+    left: 50px;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Overskriften i højre side */
+
+.frivillig_overskrift {
+    position: relative;
+    left: 900px;
+    top: -400px;
+    font-size: 60px;
+    color: #F76F1E;
+}
+
+/* ----- (ORANGE) ANIMERET KNAP TIL DIVERSE SIDER ----- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  left: 63%;
+  top: -300px;
+  
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'New Frank', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #F76F1E;
+    transition: 1s;
+    box-shadow: 6px 6px 0 #5E5047;
+    transform: skewX(-15deg);
+    
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations til knappen */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #ff904f;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+
+/* ----- Countdown Timer til forsiden ----- */
+
+.countdown_container {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countdown_container h2 {
+    text-align: center;
+    font-style: 10em;
+    line-height: 0.7em;
+    color: #333;
+    margin-top: -80px;
+}
+
+.countdown_container h2 span {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+
+.countdown {
+    display: flex;
+    margin-top: 50px;
+}
+
+.countdown div {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.countdown div:before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #ff0;
+    color: #333;
+    font-style: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.countdown #day:before {
+    content: 'Dage';
+}
+
+.countdown #hour:before {
+    content: 'Timer';
+}
+
+.countdown #minute:before {
+    content: 'Minutter';
+}
+
+.countdown #second:before {
+    content: 'Sekunder';
+}
+
