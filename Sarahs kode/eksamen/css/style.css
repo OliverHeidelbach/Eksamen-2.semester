@@ -1,0 +1,418 @@
+/* ----------------------------------------- Titel på siden ----------------------------------------- */
+.titel_omos {
+  text-align: center;
+  color: #c5392b;
+}
+
+/* ----------------------------------------- Kort ----------------------------------------- */
+.kort_body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 0.3fr));
+  grid-gap: 32px;
+  justify-content: center;
+}
+
+.kort {
+  overflow: hidden;
+  border: 1px solid;
+  box-shadow: 4px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: border 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.kort_link::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: relative;
+  left: 0.5rem;
+}
+
+/* ----------------------------------------- Hover på kort ----------------------------------------- */
+.kort:hover {
+  border: 1px solid;
+  box-shadow: 8px 8px;
+  color: #2e2d2e;
+}
+
+/* ----------------------------------------- Kort img ----------------------------------------- */
+.kort_img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 320px 568px) {
+  .kort_img {
+    height: 15rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ----------------------------------------- Kort titel ----------------------------------------- */
+.kort_title {
+  padding: 1rem;
+  color: #c5392b;
+}
+
+/* ----------------------------------------- Kort link ----------------------------------------- */
+.kort_link {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  color: #c5392b;
+}
+
+/* ----------------------------------------- Citat ----------------------------------------- */
+.brunt_felt {
+  background-color: #5e5047;
+  height: 140px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+.citat {
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 50px;
+}
+
+/* ----------------------------------------- Historie sektioner ----------------------------------------- */
+.container_historie_sektioner {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container_historie_img_v {
+  display: flex;
+  justify-content: left;
+  width: 650px;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.container_historie_img_h {
+  display: flex;
+  justify-content: right;
+  width: 650px;
+  height: 400px;
+  margin-right: 100px;
+}
+
+.overskrift_historie_sektion {
+  color: #f76f1e;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.overskrift_historie_sektion_2 {
+  color: #f76f1e;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: right;
+}
+
+.container_historie_tekst_h {
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 180px;
+  margin-left: 0px;
+  line-height: 1.3;
+}
+
+.container_historie_tekst_v {
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 50px;
+  line-height: 1.3;
+  text-align: right;
+}
+
+/* ----------------------------------------- Bliv frivillig ----------------------------------------- */
+
+.frivillig_img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 900px;
+}
+
+.frivillig_tekst {
+  position: relative;
+  z-index: 30;
+  padding: 10px;
+  background-color: #c5392b;
+  bottom: 800px;
+  width: 40%;
+  height: 100px;
+}
+
+.frivillig_overskrift {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.frivillig_underoverskrift {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.frivillig_info_tekst {
+  position: relative;
+  z-index: 30;
+  padding: 10px;
+  float: right;
+  background-color: #c5392b;
+  bottom: 500px;
+  width: 40%;
+  height: 230px;
+}
+
+.frivillig_info {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.frivillig_info_underoverskrift {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+/* ----------------------------------------- Praktisk info ----------------------------------------- */
+
+.praktisk_info_overskrift {
+  text-align: center;
+  display: block;
+  color: #5e5047;
+  font-size: 30px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_praktiskinfo_stor {
+  margin: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+.container_information {
+  display: flex;
+  position: relative;
+  left: 2%;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.container_left {
+  width: 500px;
+  padding: 5px;
+  margin-right: 150px;
+}
+
+.container_right {
+  width: 500px;
+  padding: 5px;
+  margin-right: 200px;
+}
+
+.container_hvornår_hvor {
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 200px;
+  height: 110px;
+  border-radius: 10px;
+  background-color: #5e5047;
+  margin-left: 400px;
+}
+
+.titel_hvornår_hvor {
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.tekst_hvornår_hvor {
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.praktisk_info_tekst {
+  line-height: 1.3;
+  width: 350px;
+  height: 400px;
+  color: #2e2d2e;
+  margin-right: 200px;
+  font-size: 17px;
+}
+
+/* ----------------------------------------- Praktisk info kort ----------------------------------------- */
+.map_overskrift {
+  text-align: center;
+  display: block;
+  color: #5e5047;
+  font-size: 30px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.map_festival_lokation {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+/* ----------------------------------------- Galleri ----------------------------------------- */
+
+.herobillede_img {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  z-index: 10;
+}
+
+.header_text {
+  position: relative;
+  font-weight: 900;
+  font-size: 60px;
+  color: #c5392b;
+  z-index: 20;
+  bottom: 140px;
+  margin-left: 30px;
+}
+
+/* ----------------------------------------- Tidslinjen ------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.aarstal {
+  margin-top: 10px;
+  color: #c5392b;
+}
+
+.container_galleri_billeder {
+  display: flex;
+  flex-direction: row;
+}
+
+.tidslinje_billeder {
+  width: 25%;
+  margin: 10px;
+}
+
+/* Tidslinjen */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #c5392b;
+  top: 0;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container rundt om billederne */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+
+/* Prikkerne til tidslinjen */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -10px;
+  background-color: #2e2d2e;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Placering af container til højre */
+.right {
+  left: 50%;
+  bottom: 45px;
+}
+
+/* Fix prikkerne til venstre */
+.left::after {
+  right: -16px;
+}
+
+/* billederne */
+.galleri_billeder {
+  padding: 20px 30px;
+  background-color: #2e2d2e;
+  position: relative;
+  border-radius: 6px;
+  height: 300px;
+}
+
+/* Place tidslinjen til venstre */
+.timeline::after {
+  left: 31px;
+}
+
+/* Full-width containers */
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+
+/* Sikre at prikkerne er samme sted */
+.left::after,
+.right::after {
+  left: 15px;
+}
+
+/* Sikre at containerne reagere ens */
+.right {
+  left: 0%;
+}
