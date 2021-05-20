@@ -112,6 +112,41 @@ font-style: normal;
     height: 200px;
 }
 
+.lineup_kort_container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.lineup_kort_container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.lineup_kortet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.lineup_kort_tekstbox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 150px;
+    bottom: 750px;
+    background-color: #C5392B;
+    z-index: 5;
+}
+
+.lineup_kort_h2 {
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
 
 
 
@@ -247,7 +282,7 @@ background-color: #FFFFFF;
 
 .cta:hover {
     transition: 0.5s;
-    box-shadow: 10px 10px 0 #FBC638;
+    box-shadow: 10px 10px 0 #C5392B;
 }
 
 .cta span:nth-child(2) {
@@ -310,6 +345,72 @@ path.two {
         fill: white;
     }
 }
+
+
+/* ----- FOOTER ----- */
+
+.footer {
+    background-color: #C5392B;
+    padding: 50px 0;
+}
+
+.footer_container {
+    max-width: 1170px;
+    background-color: #C5392B;
+    margin: auto;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_col {
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer_col h4 {
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer_col p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer_col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #FFFFFF;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.fa {  
+  padding: 20px;  
+  text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 50px;  
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}
+
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+
 
 
 /* ----- Countdown Timer til forsiden ----- */
