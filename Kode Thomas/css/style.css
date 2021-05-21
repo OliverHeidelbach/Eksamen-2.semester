@@ -1,0 +1,262 @@
+body {
+
+font-family: frank-new, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+}
+
+html{
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+header{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.logo{
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  z-index: 99;
+}
+
+.hero{
+  width: 100%;
+  max-height: 750px;
+  margin:0;
+  padding:0;
+}
+
+.menubar{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url("../img/menubar_aav.png");
+  background-size: cover;
+  height: 70px;
+  top: 0px;
+  margin-top: -70px;
+  border-bottom: 5px #2e2d2e solid;
+  z-index: 98;
+}
+
+.menubar a{
+  padding-top: 25px;
+}
+.festival_teaser_sec{
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+.countdown{
+  position: relative;
+  top: 0;
+  left: 20%;
+  z-index: 1;
+  text-align: center;
+}
+
+.countdown h1{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+#festival_teaser{
+  position: relative;
+  top: 300px;
+  z-index: 1;
+  left: 100px;
+}
+
+#festival_teaser{
+  font-size: 25px;
+}
+
+#con_1{
+  position: relative;
+  z-index: -1;
+  top: -400px;
+  left: -15%;
+  width: 50%;
+}
+
+#con_2{
+  position: relative;
+  z-index: -1;
+  top: -400px;
+  right: -50%;
+  width: 70%;
+}
+
+.galleri_teaser_sec{
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.galleri_img{
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  top:-275px;
+}
+
+.galleri_teaser{
+  background-color: #C5392B;
+  padding: 20px;
+  position:relative;
+  top: 300px;
+  left: 0;
+  width: 40%;
+  height: 225px;
+  color: #ffffff;
+}
+
+.galleri_teaser h1{
+  font-size: 500%;
+  margin:20px;
+  margin-left: 0;
+}
+
+.galleri_teaser h2{
+  font-size: 175%;
+}
+
+.galleri_teaser p{
+  color: #E7AEA8;
+  font-size: 15px;
+  float: right;
+}
+
+/*--------------  EVENT KALENDER  ----------------*/
+.event_kalender{
+  background-color: #5E5047;
+  padding-bottom: 100px;
+  padding-top:50px;;
+}
+
+.event{
+  position: relative;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  z-index: 2;
+}
+.event_img{
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.event h2, .event_time{
+  color: #F76F1E;
+  margin: 5px;
+}
+
+.event_description{
+  color: white;
+  margin-bottom: 40px;
+}
+
+ .ek_container1, .ek_container2{
+   position: fixed;
+   z-index: 1;
+ }
+
+ .ek_container1{
+   left: -70px;
+   width: 400px;
+   top: 60px;
+ }
+
+ .ek_container2{
+   right: -100px;
+   width: 600px;
+   top: 350px;
+ }
+/*---------------  FESTIVAL HASHTAG SIDE  ---------------------*/
+
+.hashtag_box{
+  width: 100%;
+  overflow: hidden;
+}
+
+.hashtag_img{
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.hashtag_tekst{
+  position: absolute;
+  z-index: 5;
+  bottom: 25px;
+  color: white;
+  left: 50%;
+  margin-left:-400px;
+}
+
+.lister{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.hashtag_tekst h1{
+  text-align: center;
+}
+
+.hashtag_tekst h2{
+  margin-top: 60px;
+}
+
+.hashtag_collage h2{
+  color: #F76F1E;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+/*-----------  Menubar til undersider  ---------------*/
+
+.menu_underside{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../img/menubar_aav.png");
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+
+.menu_underside img{
+  width: 200px;
+  margin-top: 10px;
+}
+
+#highlight{
+  color: #c5392b;
+}
+
+.menu_underside a:hover{
+  color: #c5392b;
+  transition: 0.2s;
+}
