@@ -234,7 +234,7 @@
   margin-right: 200px;
 }
 
-.container_hvornår_hvor {
+.container_hvornaar_hvor {
   margin-bottom: 30px;
   padding: 10px;
   width: 200px;
@@ -244,7 +244,7 @@
   margin-left: 400px;
 }
 
-.titel_hvornår_hvor {
+.titel_hvornaar_hvor {
   text-align: center;
   justify-content: center;
   color: #ffffff;
@@ -253,7 +253,7 @@
   margin-top: 20px;
 }
 
-.tekst_hvornår_hvor {
+.tekst_hvornaar_hvor {
   text-align: center;
   justify-content: center;
   color: #ffffff;
@@ -312,9 +312,6 @@
 }
 
 /* ----------------------------------------- Tidslinjen ------------------------------------------*/
-* {
-  box-sizing: border-box;
-}
 
 body {
   background-color: #ffffff;
