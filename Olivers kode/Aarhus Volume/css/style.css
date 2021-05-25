@@ -996,6 +996,7 @@ path.two {
 .some_col img {
     height: 75%;
     width: 75%;
+    border: #4F433C solid 3px;
     transition: transform .2s;
 
 }
@@ -1006,6 +1007,34 @@ path.two {
 
 .some_h2 {
     font-size: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+    .some_overskrift {
+        margin-top: 50px;
+        font-size: 70px;
+    }
+    
+    .some_col {
+        margin-bottom: 150px;
+    }
+    
+    .some_col img {
+        margin-top: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .some_overskrift {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .some_h2 {
+        font-size: 25px;
 }
 
 
