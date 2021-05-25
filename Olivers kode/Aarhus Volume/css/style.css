@@ -24,7 +24,6 @@ a{
 
 /*-----------  Menubar til undersider  ---------------*/
 
-
 .menu_underside{
   position: fixed;
   display: flex;
@@ -279,8 +278,6 @@ a{
 
 /* ----- (ORANGE) ANIMERET KNAP TIL DIVERSE SIDER ----- */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
-
 * {
     box-sizing: border-box;
 }
@@ -524,7 +521,6 @@ path.two {
     width: 100%;
     height: 35px;
     color: #333;
-    font-style: 0.35em;
     line-height: 35px;
     font-weight: 300;
 }
@@ -1011,12 +1007,6 @@ path.two {
 .some_h2 {
     font-size: 40px;
 }
-
-
-
-
-
-
 
 
 
