@@ -964,6 +964,61 @@ path.two {
   left: 0%;
 }
 
+/* ----- SoMe sektion til forsiden ----- */
+
+.some_overskrift_container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #F76F1E;
+    background: linear-gradient(180deg, rgba(247, 111, 30, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    z-index: 3;
+    
+}
+
+.some_overskrift {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 80px;
+    text-align: center;
+    top: -240px;
+    z-index: 5;
+
+}
+
+.some_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.some_col {
+    text-align: center;
+    margin-top: -150px;
+}
+
+.some_col img {
+    height: 75%;
+    width: 75%;
+    transition: transform .2s;
+
+}
+.some_col img:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.some_h2 {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
