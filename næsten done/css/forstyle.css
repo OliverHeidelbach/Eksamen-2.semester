@@ -1,0 +1,777 @@
+/*----------- GLOBAL ---------------*/
+
+body {
+
+font-family: frank-new, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+}
+
+html{
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+header{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ----- (ORANGE) ANIMERET KNAP TIL DIVERSE SIDER ----- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    left: 60%;
+    top: 3800px;
+
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'New Frank', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #F76F1E;
+    transition: 1s;
+    box-shadow: 6px 6px 0 #5E5047;
+    transform: skewX(-15deg);
+
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #C5392B;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations til knappen */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #ff904f;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+/*--------- forside menu -----------*/
+.logo{
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -5%;
+  width: 15%;
+  z-index: 99;
+}
+
+.hero{
+  width: 100%;
+  max-height: 750px;
+  margin:0;
+  padding:0;
+}
+
+.menubar{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url("../img/menubar_aav.png");
+  background-size: cover;
+  height: 70px;
+  top: 0px;
+  margin-top: -70px;
+  border-bottom: 5px #2e2d2e solid;
+  z-index: 98;
+}
+
+.menubar a{
+  padding-top: 25px;
+}
+/*-----------  Menubar til undersider  ---------------*/
+
+
+.menu_underside{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../img/menubar_aav.png");
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+
+.menu_underside img{
+  width: 200px;
+  margin-top: 10px;
+}
+
+#highlight{
+  color: #c5392b;
+}
+
+.menu_underside a:hover{
+  color: #c5392b;
+  transition: 0.2s;
+}
+
+/* ----- FOOTER ----- */
+
+.footer {
+    background-color: #C5392B;
+    padding: 50px 0;
+    position: relative;
+    z-index: 77;
+}
+
+.footer_container {
+    width: 100%;
+    background-color: #C5392B;
+    margin: auto;
+}
+
+.footer_row {
+    display: flex;
+}
+
+.footer_col {
+    width: 200px;
+    padding: 0 15px;
+}
+
+.footer_col h4 {
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    position: relative;
+    width: 200px;
+}
+
+.footer_col p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer_col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #FFFFFF;
+    height: 2px;
+    box-sizing: border-box;
+
+}
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 50px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.footer_logo {
+    height: 50px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+/*------------ Forside -----------------*/
+.festival_teaser_sec{
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+.countdown_sec{
+  position: relative;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
+  max-width: 600px;
+}
+
+.countdown_sec h1{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+/* ----- Countdown Timer til forsiden ----- */
+
+.countdown_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 50;
+}
+
+.countdown_container h2, .countdown_container span {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+
+.countdown {
+    display: flex;
+    margin-top: 50px;
+}
+
+.countdown div {
+    position: relative;
+    width: 125px;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    background: #5e5047;
+    color: #fff;
+    margin: 0 30px;
+    font-size: 4em;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.countdown div:before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: #333;
+    font-style: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.countdown #day:before {
+    content: 'Dage';
+}
+
+.countdown #hour:before {
+    content: 'Timer';
+}
+
+.countdown #minute:before {
+    content: 'Minutter';
+}
+
+.countdown #second:before {
+    content: 'Sekunder';
+}
+
+#festival_teaser{
+  position: relative;
+  top: 150px;
+  z-index: 1;
+  left: 100px;
+  font-size: 25px;
+}
+
+
+#con_1{
+  position: relative;
+  z-index: -1;
+  top: -500px;
+  left: -15%;
+  width: 50%;
+}
+
+#con_2{
+  position: relative;
+  z-index: -1;
+  top: -400px;
+  right: -50%;
+  width: 70%;
+}
+
+/* Dette danner den brune baggrund vha. en stor <div>, som er den brune farve. */
+
+.omos_brun_baggrund {
+    width: 100%;
+    height: 800px;
+    background-color: #5e5047;
+
+}
+
+/* Billedet i sektionen bliver sat ind og stylet her */
+
+.omos_billede {
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    top: 45px;
+    left: 40%;
+    z-index: 3;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Den store overskrift som til dels går ind over billedet via z-index. */
+
+.omos_overskrift {
+    position: relative;
+    margin: 0;
+    bottom: 50%;
+    left: 10%;
+    color: white;
+    font-size: 100px;
+    z-index: 5;
+    -webkit-text-stroke: 1px #4F433C;
+    max-width: 700px;
+    /* bredde og farve */
+
+}
+
+/* Undertitlen som vises lige over knappen. */
+
+.omos_undertitel {
+    position: relative;
+    margin: 0;
+    bottom: 350px;
+    left: 10%;
+    max-width: 550px;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+
+}
+
+.omos_button {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 2400px;
+    z-index: 5;
+    right: 0;
+}
+
+/*---------- Galleri teaser på forside-------------*/
+
+.galleri_teaser_sec{
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.galleri_img{
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  top:-300px;
+}
+
+.galleri_teaser{
+  background-color: #C5392B;
+  padding: 20px;
+  position:relative;
+  top: 300px;
+  left: 0;
+  width: 40%;
+  height: 300px;
+  color: #ffffff;
+}
+
+.galleri_teaser h2{
+  font-size: 500%;
+  margin:20px;
+  margin-left: 0;
+}
+
+.galleri_teaser h3{
+  font-size: 145%;
+}
+
+.galleri_teaser p{
+  color: #E7AEA8;
+  font-size: 15px;
+  float: right;
+}
+
+/* ---------- BLIV FRIVILLIG SEKTIONEN ---------- */
+
+/* Den hvide baggrund */
+
+.frivillig_baggrund {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+/* Billedet til "Bliv frivillig sektionen" */
+
+.frivillig_billede {
+    position: relative;
+    min-width: 650px;
+    width: 50%;
+    top: 100px;
+    left: 50px;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Overskriften i højre side */
+
+.frivillig_overskrift_2 {
+    position: relative;
+    left: 60%;
+    top: -400px;
+    font-size: 50px;
+    color: #F76F1E;
+    max-width: 400px;
+    margin:0;
+}
+
+
+
+/*-----------  Menubar til undersider  ---------------*/
+
+.menu_underside{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../img/menubar_aav.png");
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+
+.menu_underside img{
+  width: 200px;
+  margin-top: 10px;
+}
+
+#highlight{
+  color: #c5392b;
+}
+
+.menu_underside a:hover{
+  color: #c5392b;
+  transition: 0.2s;
+}
+@media screen and (max-width: 920px){
+.footer_row {
+    flex-direction: column;
+}
+}
+/*-------------------------Tablet og Mellem størrelse -------------------------------*/
+@media screen and (max-width: 1200px){
+  .logo{
+    width: 40%;
+    margin-left: -20%;
+  }
+  .menubar{
+    display: none;
+  }
+
+  .countdown_sec{
+    left: 50%;
+    margin-left: -300px;
+  }
+
+  #festival_teaser{
+    left: 50px;
+    width: 500px;
+  }
+
+  .omos_overskrift{
+  bottom: 200px;
+  left: 8%;
+  font-size: 80px;
+  max-width: 530px;
+}
+
+
+.omos_billede{
+  left: 30%;
+}
+
+.omos_undertitel{
+  bottom: 150px;
+}
+
+.omos_button{
+  top:1200px;
+  margin-top: 100%;
+}
+
+.omos_brun_baggrund{
+  height: 1200%;
+}
+
+  .frivillig_overskrift_2{
+    left:55%;
+    top: -200px;
+    font-size: 35px;
+    max-width: 260px;
+  }
+
+  .frivillig_billede{
+    left: 10px;
+    min-width: 300px;
+    top: 50px;
+  }
+
+  .wrapper{
+    left: 55%;
+    top: 2100px;
+    margin-top: 100%;
+  }
+
+  .wrapper span{
+    font-size: 20px;
+  }
+
+  .galleri_teaser_sec{
+    height: 500px;
+
+  }
+
+  .galleri_teaser{
+    top: 100px;
+    width: 60%;
+    max-height: : 400px;
+  }
+
+  .galleri_img{
+    max-width: 1203px;
+  }
+
+}
+
+
+/*---------------------  Mobil og lille størrelse   ------------------------------*/
+@media screen and (max-width: 600px){
+  .logo{
+    width: 60%;
+    margin-left: -30%;
+  }
+
+
+  .countdown_sec{
+    left: 50%;
+    margin-left: -175px;
+    max-width: 350px;
+  }
+
+  .countdown_sec h1{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #day, #hour{
+    font-size: 3em;
+  }
+  .countdown div{
+    height: 150px;
+    width: 100px;
+  }
+
+  #festival_teaser{
+    font-size: 15px;
+    left:50%;
+    margin-left: -160px;
+    width:90%;
+  }
+
+  .festival_teaser_sec{
+    max-height: 650px;
+  }
+
+  .omos_brun_baggrund{
+    height: 600px;
+    }
+
+  .omos_billede{
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+  }
+
+  .omos_overskrift{
+  bottom: 50px;
+  left: 10%;
+  font-size: 40px;
+  max-width: 300px;
+  margin-left: 0;
+  }
+
+  .omos_undertitel{
+  bottom: 30px;
+  max-width: 300px;
+  font-size: 15px;
+  }
+
+  .omos_button{
+  left: 10%;
+  top: 920px;
+
+  width:300px;
+  }
+
+  .omos_button span{
+    font-size: 15px;
+  }
+
+  .galleri_teaser_sec{
+    height: 300px;
+  }
+
+  .galleri_img{
+  width: 140%;
+  }
+
+  .galleri_teaser{
+    top: 50px;
+    width: 60%;
+    height: 175px;
+    }
+
+  .galleri_teaser h2{
+    font-size: 300%;
+    margin:0px;
+    }
+
+  .galleri_teaser h3{
+    font-size: 75%;
+    }
+
+  .galleri_teaser p{
+    font-size: 10px;
+    }
+
+    .frivillig_baggrund{
+      height: 400px;
+    }
+
+  .frivillig_billede {
+        min-width: 0px;
+        width: 50%;
+
+        left: 10px;
+        }
+
+  .frivillig_overskrift_2 {
+        left: 55%;
+        top: -100px;
+        font-size: 20px;
+        width: 170px;
+        }
+
+    .wrapper{
+    left: 50%;
+    margin-left: -100px;
+    width: 10px;
+    top: 1600px;
+    margin-top: 100%;
+    }
+
+    .wrapper span{
+      font-size: 15px;
+      width: 40px;
+    }
+
+    .footer_container {
+      width: 100%;
+    }
+
+    .footer_col{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .footer p{
+      font-size: 15px;
+    }
+
+    .footer h4{
+      font-size: 20;
+    }
+}
