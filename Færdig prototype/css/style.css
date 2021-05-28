@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 /* Reset */
 
 html {
@@ -24,6 +25,16 @@ a{
 
 /*-----------  Menubar til undersider  ---------------*/
 
+.logo_under{
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 97;
+  width: 40%;
+  margin-left: -20%;
+}
+
 .menu_underside{
   position: fixed;
   display: flex;
@@ -48,6 +59,36 @@ a{
   transition: 0.2s;
 }
 
+.dropdown{
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 97;
+}
+
+.dropdown img{
+  width: 50px;
+}
+
+.dropdown-content{
+  display: none;
+  background-color: #ffffff;
+  padding: 10px 20px 10px 20px;
+}
+
+.dropdown-content h2{
+  color: #2d2e2f;
+  font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown{
+  display: none;
+}
+
 
 
 /* ----- LINEUP - (Underside) ----- */
@@ -68,6 +109,7 @@ a{
 
 .lineup_hero_billede {
     width: 100%;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     z-index: 3;
@@ -126,7 +168,7 @@ a{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: 1200px;
+    min-height: 1200px;
     padding: 50px;
 }
 
@@ -140,6 +182,11 @@ a{
     margin-left: 10px;
     color: #C5392B;
     text-decoration: none;
+    font-size: 20px;
+}
+
+.lineup_kunstner_kort a{
+  font-size: 15px;
 }
 
 .lineup_kunstner_billede {
@@ -149,8 +196,7 @@ a{
 .lineup_kort_container {
     position: relative;
     width: 100%;
-    height: 700px;
-
+    overflow: hidden;
 }
 
 .lineup_kortet {
@@ -164,9 +210,11 @@ a{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     height: 150px;
-    bottom: 550px;
+    bottom: -160px;
+    margin-bottom: 50%;
     background-color: #C5392B;
     z-index: 5;
 }
@@ -243,6 +291,12 @@ a{
 
 }
 
+iframe{
+   width:600px;
+   height:450px;
+   border:0;
+}
+
 /* ---------- BLIV FRIVILLIG SEKTIONEN ---------- */
 
 /* Den hvide baggrund */
@@ -280,14 +334,6 @@ a{
 
 * {
     box-sizing: border-box;
-}
-
-.wrapper {
-    display: flex;
-    position: relative;
-    left: 63%;
-    top: -300px;
-
 }
 
 .cta {
@@ -382,21 +428,22 @@ path.two {
 .footer {
     background-color: #C5392B;
     padding: 50px 0;
+    position: relative;
+    z-index: 77;
 }
 
 .footer_container {
-    max-width: 1170px;
+    width: 100%;
     background-color: #C5392B;
     margin: auto;
 }
 
 .footer_row {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer_col {
-    width: 25%;
+    width: 200px;
     padding: 0 15px;
 }
 
@@ -405,6 +452,7 @@ path.two {
     color: #FFFFFF;
     margin-bottom: 30px;
     position: relative;
+    width: 200px;
 }
 
 .footer_col p {
@@ -421,7 +469,7 @@ path.two {
     background-color: #FFFFFF;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+
 }
 
 .fa {
@@ -473,73 +521,6 @@ path.two {
     z-index: 5;
 }
 
-/* ----- Countdown Timer til forsiden ----- */
-
-.countdown_container {
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    right: 100px;
-    bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.countdown_container h2 span {
-    display: block;
-    font-weight: 300;
-    letter-spacing: 6px;
-    font-size: 0.2em;
-}
-
-.countdown {
-    display: flex;
-    margin-top: 50px;
-}
-
-.countdown div {
-    position: relative;
-    width: 125px;
-    height: 200px;
-    padding-top: 50px;
-    text-align: center;
-    background: #5e5047;
-    color: #fff;
-    margin: 0 30px;
-    font-size: 4em;
-    font-weight: 500;
-    border-radius: 15px;
-}
-
-.countdown div:before {
-    content: '';
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    height: 35px;
-    color: #333;
-    line-height: 35px;
-    font-weight: 300;
-}
-
-.countdown #day:before {
-    content: 'Dage';
-}
-
-.countdown #hour:before {
-    content: 'Timer';
-}
-
-.countdown #minute:before {
-    content: 'Minutter';
-}
-
-.countdown #second:before {
-    content: 'Sekunder';
-}
 
 /* ----------------------------------------- Titel på siden ----------------------------------------- */
 .titel_omos {
@@ -729,9 +710,8 @@ path.two {
   padding: 10px;
   float: right;
   background-color: #c5392b;
-  bottom: 500px;
+  bottom: 525px;
   width: 40%;
-  height: 260px;
 }
 
 .frivillig_info {
@@ -875,6 +855,7 @@ path.two {
 
 .tidslinje_billeder {
   width: 25%;
+  height: 100%;
   margin: 10px;
 }
 
@@ -960,80 +941,417 @@ path.two {
   left: 0%;
 }
 
-/* ----- SoMe sektion til forsiden ----- */
-
-.some_overskrift_container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-color: #F76F1E;
-    background: linear-gradient(180deg, rgba(247, 111, 30, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
-    z-index: 3;
-
+/*--------------  EVENT KALENDER  ----------------*/
+.event_kalender{
+  background-color: #5E5047;
+  padding-bottom: 100px;
+  padding-top:50px;
+  overflow: hidden;
 }
 
-.some_overskrift {
-    position: relative;
-    color: #FFFFFF;
-    font-size: 80px;
-    text-align: center;
-    top: -240px;
-    z-index: 5;
-
+.event{
+  position: relative;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  z-index: 2;
+}
+.event_img{
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
 }
 
-.some_row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.event h2, .event_time{
+  color: #F76F1E;
+  margin: 5px;
 }
 
-.some_col {
-    text-align: center;
-    margin-top: -150px;
+.event_description{
+  color: white;
+  margin-bottom: 40px;
 }
 
-.some_col img {
-    height: 75%;
-    width: 75%;
-    border: #4F433C solid 3px;
-    transition: transform .2s;
+ .ek_container1, .ek_container2{
+   position: fixed;
+   z-index: 1;
+ }
 
-}
-.some_col img:hover {
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+ .ek_container1{
+   left: -70px;
+   width: 400px;
+   top: 60px;
+ }
+
+ .ek_container2{
+   right: -100px;
+   width: 600px;
+   top: 350px;
+ }
+
+ .ek_gradient{
+   position: relative;
+   height: 400px;
+   width: 100%;
+   background-image: linear-gradient(#5E5047, white);
+   z-index: 2;
+ }
+/*---------------  FESTIVAL HASHTAG SIDE  ---------------------*/
+
+.hashtag_box{
+  width: 100%;
+  overflow: hidden;
 }
 
-.some_h2 {
+.hashtag_img{
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.hashtag_tekst{
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  color: white;
+  left: 50%;
+  margin-left:-400px;
+}
+
+.lister{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.hashtag_tekst h1{
+  text-align: center;
+}
+
+.hashtag_tekst h2{
+  margin-top: 60px;
+}
+
+.hashtag_collage h2{
+  color: #F76F1E;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 920px){
+  .footer_row {
+    flex-direction: column;
+  }
+}
+/*-------------------------Tablet og Mellem størrelse -------------------------------*/
+@media screen and (max-width: 1200px){
+  .logo_under{
+    display: block;
+  }
+
+  .dropdown{
+    display: block;
+  }
+
+  .menu_underside{
+    display: none;
+  }
+
+  .event_kalender{
+    padding-top: 40px;
+  }
+
+  .lineup_festivalspil_container{
+    margin-top: 150px;
+  }
+
+  .lineup_hero_overskrift_h1{
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 10%;
+    top: 0;
+  }
+
+  .lineup_hero_overskrift_h2{
+    left: 50%;
+    margin-left: 50px;
+    margin-top: 10%;
+    top: 40px;
+  }
+
+  .lineup_button {
+      left: 50%;
+      top: 250px;
+      margin-top: 10%;
+      margin-left: -250px;
+    }
+
+    .lineup_kort_tekstbox{
+      height: 100px;
+      bottom: -110px;
+    }
+
+    .lineup_kort_h2{
+    margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+ .herobillede_img {
+   height: auto;
+ }
+
+ .header_text {
+   position: relative;
+   font-weight: 900;
+   font-size: 70px;
+   color: #c5392b;
+   z-index: 20;
+   bottom: 150px;
+   margin-left: 30px;
+ }
+
+ .aarstal {
+   margin-top: 10px;
+   font-size: 35px;
+   color: #c5392b;
+ }
+
+ .container_galleri_billeder {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .tidslinje_billeder {
+   width: 45%;
+   margin: 10px;
+ }
+
+ .container::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 25px;
+   right: -10px;
+   background-color: #c5392b;
+   top: 20px;
+   border-radius: 50%;
+   z-index: 1;
+ }
+}
+
+@media screen and (max-width: 770px){
+  .lineup_hero_overskrift_h1{
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 10%;
+    top: 0;
     font-size: 40px;
+  }
+
+  .lineup_hero_overskrift_h2{
+    left: 50%;
+    margin-left: 20px;
+    margin-top: 10%;
+    top: 20px;
+    font-size: 55px;
+  }
+
+  .lineup_button{
+    top: 130px;
+    margin-left: -190px;
+  }
+
+  .lineup_festivalspil_container {
+    margin-top: 100px;
+  }
+
+    .lineup_overskrift_container {
+    top: 80px;
+  }
+
+}
+@media screen and (max-width: 650px){
+  .logo_under{
+    width: 60%;
+    margin-left: -30%;
+  }
+
+  .dropdown img{
+    width: 45px;
+  }
+
+  .ek_container1{
+    top: 80px;
+    left: -250px;
+  }
+
+  .ek_container2{
+    top: 370px;
+    right: -450px;
+  }
+
+  .event{
+    width: 300px;
+  }
+  .event_img{
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .event h2{
+    font-size: 15px;
+  }
+
+  .event_time{
+    font-size: 10px;
+  }
+
+  .event p{
+    font-size: 13px;
+  }
+
+  .event_description{
+    margin-bottom: 10px;
+  }
+
+  .ek_gradient{
+    height:200px;
+  }
+
+  .lineup_kunstner_billede {
+    height: 150px;
+  }
+
+  .lineup_kort_h2 {
+    font-size: 25px;
+    margin-top: 15px;
+    }
+
+  .lineup_kort_tekstbox{
+    height: 60px;
+    top: 0px;
+  }
+
+  .lineup_kortet{
+    width: 145%;
+    margin-left: -74px;
+  }
+
+    .lineup_kunstnere_container{
+      padding: 0;
+      margin-top: 30px;
+    }
+
 }
 
-@media screen and (max-width: 1300px) {
-    .some_overskrift {
-        margin-top: 50px;
-        font-size: 70px;
+@media screen and (max-width: 450px){
+  .lineup_button span{
+    font-size: 20px;
+  }
+
+  .lineup_button{
+    height: 50px;
+    left:60%;
+  }
+  .lineup_kunstner_kort {
+    height: 250px;
     }
 
-    .some_col {
-        margin-bottom: 150px;
-    }
+    .lineup_kunstner_billede {
+    height: 120px;
+  }
 
-    .some_col img {
-        margin-top: 16px;
-    }
+  .lineup_kunstner_kort h2{
+      font-size: 20px;
+  }
 
 }
 
-@media screen and (max-width: 1000px) {
-    .some_overskrift {
-        margin-top: 50px;
-        font-size: 40px;
-    }
+@media screen and (min-width: 375px) {
+ .herobillede_img {
+   height: auto;
+ }
 
-    .some_h2 {
-        font-size: 25px;
-    }
+ .header_text {
+   position: relative;
+   font-weight: 900;
+   font-size: 40px;
+   color: #c5392b;
+   z-index: 20;
+   bottom: 90px;
+   margin-left: 30px;
+ }
+
+ .container_galleri_billeder {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .tidslinje_billeder {
+   width: 40%;
+   margin: 10px;
+ }
+
+ .container::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 25px;
+   right: -10px;
+   background-color: #c5392b;
+   top: 20px;
+   border-radius: 50%;
+   z-index: 1;
+ }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 320px) {
+ .herobillede_img {
+   height: auto;
+ }
+
+ .header_text {
+   position: relative;
+   font-weight: 900;
+   font-size: 30px;
+   color: #c5392b;
+   z-index: 20;
+   bottom: 65px;
+   margin-left: 30px;
+ }
+
+ .aarstal {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #c5392b;
+ }
+
+ .container_galleri_billeder {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .tidslinje_billeder {
+   width: 40%;
+   margin: 10px;
+ }
+
+ .container::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 25px;
+   right: -10px;
+   background-color: #c5392b;
+   top: 20px;
+   border-radius: 50%;
+   z-index: 1;
+ }
+}
